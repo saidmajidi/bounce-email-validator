@@ -53,7 +53,7 @@ foreach($lists as $clist) {
 	"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36");
 
     $ch[$i] = curl_init();
-    curl_setopt($ch[$i], CURLOPT_URL, "https://api.emails-checker.net/check?access_key=[insertapikey]&email=$email");
+    curl_setopt($ch[$i], CURLOPT_URL, "https://api.emails-checker.net/check?access_key=[insertapikey]&email=$email"); /* CHANGE YOUR API HERE */
     curl_setopt($ch[$i], CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch[$i], CURLOPT_FOLLOWLOCATION, 1);
     curl_setopt($ch[$i], CURLOPT_HTTPHEADER, $header);
