@@ -92,7 +92,7 @@ foreach($lists as $clist) {
       file_put_contents("unknwn.txt", $email.PHP_EOL, FILE_APPEND);
       echo "[".date("H:i:s")." ".$no."/".$total."] ".color()["LW"]."unkwn ".color()["WH"]." => ".$email.color()["WH"]; flush();
     }
-      echo "0 Day Email Validator - Recoded from Umbrella";
+      echo "0 Day Email Validator - Recoded";
     if($delpercheck) {
         $awal = str_replace("\r", "", file_get_contents("../".$listname));
           $akhir = str_replace($list."\n", "", $awal);
